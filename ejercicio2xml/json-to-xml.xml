@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<empresa>
+   <departamento>8</departamento>
+   <nombredepto>Ventas</nombredepto>
+   <director>Juan Rodríguez</director>
+   <empleados>
+    <empleado>
+         <nombre>Pedro</nombre>
+         <apellido>Fernández</apellido>
+    </empleado>
+    <empleado>
+         <nombre>Jacinto</nombre>
+         <apellido>Benavente</apellido>
+         </empleado>
+   </empleados>
+</empresa>

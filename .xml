@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Libros>
+    <libro categoria="cocina" tipo_de_libro="PRINCIPE">
+        <titulo idioma="ES">Titulo 1</titulo>
+        <autor>Autor Y</autor>
+        <year>2017</year>
+    </libro>
+
+    <libro categoria="aventura" tipo_de_libro="EN_RAMA">
+        <titulo idioma="EN">Titulo 2</titulo>
+        <autor>Autor X, Autora Z</autor>
+        <year>1259</year>
+    </libro>
+    <libro categoria="religion" tipo_de_libro="DIPLOMATICA">
+        <titulo idioma="LA">Titulo 3</titulo>
+        <autor>Desconocido</autor>
+        <year>1512</year>
+    </libro>
+</Libros>

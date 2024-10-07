@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Compras>
+    <compra fecha="13/02/2020_09:35:53" titulo="Productos_limpieza" precio="59.97€">
+        <categoria>Limpieza</categoria>
+    </compra>
+    <compra fecha="15/02/2020_11:05:23" titulo="Productos_varios" precio="142.76€">
+        <categoria>Comida</categoria>
+        <categoria>Aseo personal</categoria>
+        <categoria>Ocio</categoria>
+    </compra>
+    <compra fecha="08/04/2021_23:05:41" titulo="Refresco" precio="1.99€">
+        <categoria>Refresco</categoria>
+    </compra>
+</Compras>

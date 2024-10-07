@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Arnedo_Lopez_Ruben_MP0373_UD01_A01_2</title>
+</head>
+<body>
+	<h1>¿Porque estoy estudiando informática?</h1>
+	<p>Estoy estudiando informática porque me llevan gustando los ordenadores desde que <b>era un niño</b>, aproximadamente desde que tenía <b>8 años</b>
+	<h3>Lista de componentes de un ordenador</h3>
+	<p><a href="https://es.wikipedia.org/wiki/Microprocesador">Procesador</a>, gráfica, disco duro,<a href="https://es.wikipedia.org/wiki/Placa_base">placa base</a> y fuente de alimentación.
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1>Lo que me gusta de la informática</h1>
+	<p>Realmente, no sabría decir que es lo que me gusta de la informática, simplemente disfruto usando ordenadores e investigando <b>como funcionan</b>, y lo mismo con los <b>programas y aplicaciones</b> que usan.
+	<h3>Ejemplos de sistemas operativos</h3>
+	<p>Windows, Mac OS, <a href="https://es.wikipedia.org/wiki/Unix">Unix</a>, Android o <a href="https://es.wikipedia.org/wiki/Solaris_(sistema_operativo)">Solaris</a>
+</body>
+</html>
