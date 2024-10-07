@@ -1,6 +1,6 @@
 # Ultimate Crosspathing
 
-Un mod(modificacion) de BTD6 añadiendo mas combinaciones de mejoras mediante generación algorítmica.
+Un mod **(modificacion)** de BTD6 añadiendo más combinaciones de mejoras mediante generación algorítmica.
 
 <img alt="Screenshot" height="400" src="screenshot.png"/>
 
@@ -12,42 +12,31 @@ El modo por defecto tiene las restricción de 7 mejoras totales con lo que puede
 
 ## Respuestas rápidas
 ### ¡Dice "Failed to download asset" cuando intento descargar/actualizar el mod usando el navegador de mods!
-  El archivo "UltimateCrosspathing.dll" es bastante pesado. Si tu conexión a internet es relativamente lenta, podrías necesitar incrementar la duración de "Request Timeout" en los ajustes del Mod Helper
+  El archivo "UltimateCrosspathing.dll" es bastante pesado. Si tu conexión a internet es relativamente lenta, podrías necesitar incrementar la duración de "Request Timeout" en los ajustes del Mod Helper.
 
 
 ### Dice "Failed to load Assembly... No Compatibility Layer Found!"
-  ["BloonsTD6 Mod Helper"](https://github.com/gurrenm3/BTD-Mod-Helper/releases/latest) no está instalado correctamente. Asegurate de tener la versión más reciente y de que has extraído el archivo zip para tener un archivo en tu carpeta de mods con el nombre exacto "BloonsTD6 Mod Helper.dll"
+  ["BloonsTD6 Mod Helper"](https://github.com/gurrenm3/BTD-Mod-Helper/releases/latest) no está instalado correctamente. Asegurate de tener la versión más reciente y de que has extraído el archivo zip para tener un archivo en tu carpeta de mods con el nombre exacto "BloonsTD6 Mod Helper.dll".
 
-## Usage
+  ### ¿¡¿El coste de una mejora es un número ridículamente alto?!?
+  Eso es la forma de Ninja Kiwi de decir que no existe una torre a la que mejorar, lo que generalmente significa que el "Mod Helper" no está instalado correctamente. Mira la respuesta anterior. Revisa también los Logs del mod para ver si hubo algún error generando las torres. El coste en si no es el problema.
 
-A few examples of useful commands and/or tasks.
+# Desarrollando "Ultimate Crosspathing"
 
-```
-$ First example
-$ Second example
-$ And keep this in mind
-```
+Las dos configuraciones de "Ultimate Crosspathing, *Debug* y *Release* montan el mod de dos formas diferente.
 
-## Deployment
+- *Debug* - Por cada torre activada en los ajustes, y el número de mejoras que tengas activadas en los ajustes, las combinaciones correspondienes serán creadas desde cero en el juego. Los ajusted "Debug" de "Export Tower Bytes" será usable, y pulsarlo actualizará las clases y bytes "TowerLoader" para cada torre en el código fuente.
 
-Additional notes on how to deploy this on a live or release system. Explaining the most important branches, what pipelines they trigger and how to update the database (if anything special).
+- *Release* - En vez de generar, carga las torres basado en que bytes ya han sido generados e incluidos. Los ajustes solo determinan sus capacidades de mejoras cruzadas en la partida.
 
-### Server
+El trabajo a la hora de arreglar "Ultimate Crosspathing" después de una actualización funciona más o menos así:
 
-* Live:
-* Release:
-* Development:
+1. Ejecutar el mod en modo *"Debug"* en la nueva versión con solo el mono lanzadardos activado a 7 mejoras para comprobar si se rompe alguna parte de la generación.
 
-### Branches
+2. Si esto es exitoso, ejecutar nuevamente con todas las torres activadas con 7 mejoras (Lleva unos pocos minutes) e intentar exportar los bytes.
 
-* Master:
-* Feature:
-* Bugfix:
-* etc...
+3. Si esto es exitoso, cambiar al modo *"Release"* e intentar cargar todas las torres generadas.
 
-## Additional Documentation and Acknowledgments
+4. Si esto es exitoso, intentar la generación final en modo *"Debug"* con todas las torres con 15 mejoras (Lleva más de 30 minutos) y exportar los bytes.
 
-* Project folder on server:
-* Confluence link:
-* Asana board:
-* etc...
+5. Si esto es exitoso, probar el mod y las torres en modo *"Release"* para ver si está preparado para el lanzamiento.
