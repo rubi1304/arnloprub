@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 7</title>
+    <style>
+        * {
+            font-family: arial;
+            text-align: center;
+        }
+
+        table {
+            caption-side: bottom;
+            border-collapse: collapse;
+            margin-left: 60px;
+        }
+
+        caption{
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        th,td{
+            padding: 10px;
+            width: 185px;
+            border:solid 1px lightgray;
+        }
+
+        th{
+            background-color: lightseagreen;
+            color: white;
+        }
+        tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+        tr:hover{
+            background-color: paleturquoise;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lista de la compra</h1>
+    <table>
+        <caption><strong>Tabla 1. </strong>Lista de la compra</caption>
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Bolígrafos</td>
+                <td>1.25€</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Lápices</td>
+                <td>1€</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Rotuladores</td>
+                <td>2€</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Gomas de borrar</td>
+                <td>1.5€</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

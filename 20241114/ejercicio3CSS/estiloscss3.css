@@ -1,0 +1,40 @@
+
+/* Pon color de letra de todos los LI a purple */
+li {
+    color: purple;
+}
+
+/* Pon color de letra azul a todos los h1 y h2 (en una sola regla) */
+h1,h2 {
+    color: blue;
+}
+
+/* Haz que el elemento con id 'submit' tenga color de fondo verde */
+#submit {
+    background-color: green;
+}
+
+/* Haz que los spans dentro del elemento con id 'flavors' sean rojos */
+#flavors span {
+    color: red;
+}
+
+/* Los elementos con clase 'size' tienen que tener color de texto magenta */
+.size {
+    color: magenta;
+}
+
+/* Selecciona el input de tipo email y ponle un color de fondo naranja */
+input[type=email]{
+    background-color: orange;
+}
+
+/* Selecciona todos los links que tienen un href terminado en '.org' color magenta. Revisar en w3schools el CSS attribute selector para averiguar cómo se indica */
+a[href$=".org"]{
+    color: magenta;
+}
+
+/* Selecciona los h2 con clase 'bright' (solo los h2 con clase 'bright', no otros de la misma clase y ponles color de texto cyan */
+h2.bright{
+    color: cyan;
+}
