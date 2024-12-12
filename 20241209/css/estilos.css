@@ -1,0 +1,114 @@
+/************************************** Ejercicio 1 *********************************************/
+
+/* Relleno del pie de 25 px */
+
+
+/************************************** Ejercicio 2 *********************************************/
+
+    /* No se piden en el enunciado */
+    input {
+      margin-right: 5px;
+    }
+    h2 {
+      text-align: center;
+      padding:15px;
+    }
+    * {
+      margin: 0;
+    }
+    /* 2a: color de fondo de la página */
+    * {
+      background-color: #FAF3E0;
+      font-family: Arial, sans-serif;
+    }
+    /* 2b: centrar el texto del header y ponerle un relleno de 25px */
+    header {
+      text-align: center;
+      padding: 25px;
+    }
+    /* 2c: Poner la imagen de fondo hero */
+    div.hero {
+      height: 200px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(../img/pizza.jpg);
+    }
+    /* 2f formulario con ancho de 70% y márgenes izquierdo y derecho en auto */
+    form {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* 2g campos internos con ancho del 50%, márgenes izquierdo y derecho en auto y relleno de 15px */
+    form input {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+    }
+    /* 2h Botón para enviar el formulario con color de fondo verde y texto con font-weight de 800 de color blanco. Los bordes deben de estar redondeados (border-radius: 10px).*/
+    input[type="submit"] {
+      background-color: green;
+      font-weight: 800;
+      color: white;
+      border-radius: 10px;
+    }
+    /* 2i Botón para limpiar el formulario con color de fondo rojo y el resto de propiedades igual que el de enviar */
+    input[type="reset"] {
+      background-color: red;
+      font-weight: 800;
+      color: white;
+      border-radius: 10px;
+    }
+    /* Cuando se pasa el ratón por encima de los botones para enviar o limpiar el formulario deben ponerse en color lightgreen y lightcoral.*/
+    input:hover[type="submit"] {
+      background-color: lightgreen;
+    }
+    input:hover[type="reset"]{
+      background-color: lightcoral;
+    }
+
+    /************************************** Ejercicio 3 *********************************************/
+    /* No se pide en el enunciado */
+    main {
+      text-align: center;
+    }
+    /* 3c La tabla tiene que tener margen superior e inferior de 20px e izquierdo y derecho en “auto”. El ancho de la tabla debe de ser de un 80%. */
+    table {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+    /* 3d El color de borde de la tabla es #ddd y los textos están centrados. */
+    table {
+      border-style: solid;
+      border-color: #ddd;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    td, th {
+      border: solid #ddd;
+    }
+    /* 3e El color de fondo de la cabecera es #F4E87C.*/
+    thead th {
+      background-color: #f4e87c;
+    }
+    /* 3f Las filas pares deben de tener color #f9f9f9. */
+    tr:nth-of-type(even){
+      background-color: #f9f9f9;
+    }
+    /* 3g Cuando se pasa el ratón por encima de las filas deben de tener color #f1f1f1. */
+    td:hover{
+      background-color: #f1f1f1;
+    }
+    /* 3h La primera columna debe de tener letra en negrita y color #FFEEAD. */
+tr :first-child{
+  background-color: #ffeead;
+  font-weight: bold;
+}
+    /* El euro tiene que estar introducido con el pseudo-elemento correspondiente. */
+ .precio{
+  
+ }

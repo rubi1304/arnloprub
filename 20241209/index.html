@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Personalice su pizza</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Pizzas</h1>
+
+    <p>Nuestras pizzas artesanas en tu domicilio en una hora</p>
+  </header>
+
+  <div class="hero"></div>
+
+  <h2>Diseña tu pizza</h2>
+
+  <!-- Aqui va el formulario -->
+  <form>
+    <fieldset>
+      <legend>Elige la base</legend>
+      <form>
+        <fieldset>
+          <legend>Masa (Elige una, <a href="./precios.html">ver precios</a>):</a></legend>
+          <input type="radio" id="masa" name="Clásica" value="">
+          <label for="Clásica">Clásica</label>
+          <br><br>
+          <input type="radio" id="masa" name="Integral" value="">
+          <label for="Integral">Integral</label>
+          <br><br>
+          <input type="radio" id="masa" name="Sin_gluten" value="">
+          <label for="Sin_gluten">Sin gluten</label>
+          <br>
+        </fieldset>
+      </form>
+      <form>
+        <fieldset>
+          <legend>Ingredientes (Elige los que quieras)</legend>
+          <br>
+          <input type="checkbox">Queso mozzarella
+          <br>
+          <input type="checkbox">Pepperoni
+          <br>
+          <input type="checkbox">Champiñones
+        </fieldset>
+      </form>
+    </fieldset>
+    <input type="submit" value="Envíame el pedido!">
+    <input type="reset" value="Limpiar todo">
+  </form>
+
+</body>
+<footer>Página creada por Rubén Arnedo López</footer>
+
+</html>
