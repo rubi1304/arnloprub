@@ -1,0 +1,5 @@
+Métodos y propiedades a utilizar de un objeto audio, por ejemplo sonido:
+
+sonido.play() -> empieza a reproducir un sonido.
+sonido.pause() -> para un sonido.
+sonido.currentTime -> segundo en el que se reproducirá el sonido.

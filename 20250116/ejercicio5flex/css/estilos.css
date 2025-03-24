@@ -1,0 +1,85 @@
+html {
+    font-size: 62.5%; /* 1REM = 10px */
+}
+* {
+    margin: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 2rem 0;
+    font-size: 3.8rem;
+}
+/* 
+   Cuando el tamaño horizontal de la página es mayor de
+   768px, el font-size de h1 debe cambiar a 5rem.
+*/
+
+
+
+
+/** Header y Navegacion **/
+
+.nombre-sitio {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.nombre-sitio span {
+    color: #037bc0;
+}
+
+/* Se debe posicionar el .nav-principal con flex.
+   Si resolución:
+     * mayor de 768px: el menú está en horizontal.
+     * menor de 768px: el menú está en vertical. 
+*/
+.nav-principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+
+/* Se deben eliminar los subrayados de los enlaces y poner color de texto a negro */
+.nav-principal a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenedor-navegacion {
+    border-top: .1rem solid #e1e1e1;
+}
+
+/* 
+   La altura de la imagen de fondo debe de ser de 25rem
+   si la resolución es menor de 768px y de 55rem si es mayor
+   de 768px.
+*/
+.hero {
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 55rem;
+}
+
+
+@media only screen and (max-width:768px) {
+    .nav-principal {
+        flex-direction: column;
+        align-items:center;
+    }   
+    .hero{
+        height: 25rem;
+    }
+}

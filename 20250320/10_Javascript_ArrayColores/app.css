@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+}
+body {
+	color-interpolation-filters: invert();
+}
+#boxes {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.caja {
+	height: 150px;
+	border: 1px solid white;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+h1 {
+	text-align: center;
+}

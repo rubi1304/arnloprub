@@ -1,0 +1,19 @@
+Para añadir un elemento a un documento, por ejemplo, un div:
+
+const nuevoDiv = document.createElement('div');
+// Crea un elemento nuevo de tipo div y lo guarda en nuevoDiv
+
+nuevoDiv.innerText = 'Texto'
+nuevoDiv.style.backgroundColor = 'red'
+// El nuevo elemento tiene las mismas propiedades y métodos que cualquier otro elemento del DOM
+
+document.body.appendChild(nuevoDiv)
+// añade el elemento nuevo al body
+
+document.body.removeChild(nuevoDiv)
+// elimina el hijo del body
+
+El valor de lo que introduzcamos en un input se puede recuperar así:
+
+const miInput = document.querySelector('#idInput')
+miInput.value contiene el texto

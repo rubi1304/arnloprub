@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript04</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+        }
+        .caja {
+            display: flex;
+            align-self: center;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: red;
+            border: solid 5px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caja"></div>
+
+
+
+    <script>
+
+        function ChangeColorHold() {
+            caja.style.backgroundColor = 'green';
+        }
+
+        function ChangeColorRelease() {
+            caja.style.backgroundColor = 'red';
+        }
+        const caja = document.querySelector('.caja')
+        caja.addEventListener("mousedown", ChangeColorHold);
+        caja.addEventListener("mouseup", ChangeColorRelease)
+
+    </script>
+</body>
+
+</html>

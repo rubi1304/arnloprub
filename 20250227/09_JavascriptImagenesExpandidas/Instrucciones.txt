@@ -1,0 +1,13 @@
+CSS:
+ - div de clase panel posicionados con flexbox.
+ - los div de clase panel que no tienen la clase activo deben de tener la propiedad flex: 0.5.
+ - los div de clase panel que tienen la clase activo deben de tener la propiedad flex: 5.
+ - cuando pasamos el ratón por encima de cada panel debe de cambiarse el cursor a pointer.
+ - el texto de cada panel está oculto (se puede ocultar por ejemplo con la propiedad css 'opactity') y se muestra gradualmente cuando se expande una imagen.
+	- tanto la expansión de la imagen como el cambio de opacidad del título de cada imagen cambian gradualmente en lugar de bruscamente gracias a la propiedad transition de CSS.
+  Javascript:
+    - cuando hacemos clic en un panel deben de pasar dos cosas:
+	  * se le añade la clase activo.
+	  * se quita la clase activo del resto de paneles.
+  Media queries:
+    - cuando se reduce la pantalla menos de 480px deberían desaparecer los paneles 4 y 5.

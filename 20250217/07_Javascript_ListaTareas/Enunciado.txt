@@ -1,0 +1,19 @@
+El ejercicio consiste en crear una lista dinámica de tareas. El html tiene una lista desordenada a la que habrá que ir añadiendo, dinámicamente con un script de javascript, elementos de lista con las tareas que introduzca el usuario.
+
+Cuando el usuario introduce un valor en el input y pulsa Enter, se hará lo siguiente con javascript:
+ * crear un elemento li.
+ * Poner como innerText del elemento li el contenido del input (input.value).
+ * Añadir al elemeento li dos event listeners:
+ ** cuando se pulsa el click izquierdo se debe añadir la clase "completada" (lo cual hace que se tache el texto). Puede usarse la función toggle para marcar/desmarcar la tarea.
+ ** cuando se pulsa el click derecho se debe borrar el elemento de lista.
+ 
+Ayuda:
+Para añadir los "Event Listener" de formulario enviado (evento submit) y de botón de ratón derecho pulsado (evento contextmenu), hay que capturar el evento y evitar el comportamiento por defecto (enviar el formulario o abrir el menú contextual). Se consigue así:
+
+elemento.addEventListener('evento', (e) => {
+	e.preventDefault();
+	/* resto del código */
+})
+__________________________________________________________
+
+El valor de un campo de entrada de datos se almacena en su atributo value.

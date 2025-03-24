@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de javascript</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            color: #f5f5f5;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        img[src="img/light_bulb_on.png"] {
+            position: absolute;
+            opacity: 0;
+            transition-property: opacity;
+            transition-duration: 5s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <img src="img/light_bulb_off.png" id="noLight">
+        <img src="img/light_bulb_on.png" id="light">
+    </div>
+
+    <script>
+        function On() {
+            onLight.style.opacity = '1'
+            console.log ("On activada")
+        }
+
+        function Off() {
+            onLight.style.opacity = '0'
+            console.log ("off activada")
+        }
+
+        const onLight = document.querySelector('#light')
+        const offLight = document.querySelector('#noLight')
+
+        onLight.addEventListener("mouseout", Off);
+        onLight.addEventListener("mouseover", On)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping list example</title>
+  <style>
+    li {
+      margin-bottom: 10px;
+    }
+
+    li button {
+      font-size: 12px;
+      margin-left: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Lista de la compra</h1>
+
+  <div>
+    <label for="item">Añade un nuevo elemento:</label>
+    <input type="text">
+    <button>Añadir</button>
+  </div>
+
+  <ul>
+    <!-- aqui se deben ir añadiendo dinámicamente los li, por ejemplo:
+		 <li>
+			<span>Leche</span>
+			<button>Delete</button> // Este botón debe de borrar el elemento
+		 </li>-->
+  </ul>
+  <script>
+
+    const input = document.querySelector('input');
+    const button = document.querySelector('button')
+    const taskList = document.querySelector('ul')
+
+    button.addEventListener('click', () =>{
+      createNew()
+    })
+
+    input.addEventListener('keypress', (e) => {
+      if (e.code === "Enter") {
+        createNew()
+      }
+    })
+
+
+    function createNew() {
+      if (input.value.trim() == "") {
+        input.value = ""
+      }
+      else {
+        const newTask = document.createElement('li')
+        const newButton = document.createElement('button')
+        newTask.innerText = input.value
+        newButton.innerText = 'Delete'
+        taskList.appendChild(newTask)
+        newTask.appendChild(newButton)
+        input.value = ""
+        newButton.addEventListener("click", () => {
+          newTask.remove()
+        })
+      }
+    }
+  </script>
+</body>
+
+</html>

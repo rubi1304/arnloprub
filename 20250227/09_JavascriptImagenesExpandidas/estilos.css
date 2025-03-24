@@ -1,0 +1,38 @@
+/* propiedades flex */
+.contenedor{
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  height: 90vh;
+  cursor: pointer;
+  transition: all 0.9s ease-in;
+/* flex grow */
+flex-grow: 0.5;
+
+}
+
+.panel h3 {
+	margin-left: 12px;
+	color:white;
+	opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in;
+}
+
+.panel.activo h3 {
+	opacity: 1;
+  display: block;
+  transition: opacity 1s ease-in;
+}
+
+.panel.activo {
+	/* flex grow */
+  flex-grow: 5;
+}
+/* media query para evitar que se muestren las imágenes 4 y 5 con display: none cuando el tamaño es menor o igual a 480px */

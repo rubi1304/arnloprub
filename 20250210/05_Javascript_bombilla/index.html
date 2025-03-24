@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio de javascript</title>
+  <style>
+    * {
+      margin: 0
+    }
+
+    body {
+      color: #f5f5f5;
+    }
+
+    /* Cambiar posicionamiento de las imágenes con css */
+    .contenedor {
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .interruptores {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="interruptores">
+      <img src="img/on.jpg" alt="" id="OnButton">
+      <img src="img/off.jpg" alt="" id="OffButton">
+    </div>
+    <img src="img/bombilla_apagada.png" alt="" id="light">
+  </div>
+  <script>
+    /* Código javascript */
+    function OnPress() {
+      light.setAttribute('src', 'img/bombilla_encendida.png')
+    }
+
+    function OffPress() {
+      light.setAttribute('src', 'img/bombilla_apagada.png')
+    }
+
+    const OnButton = document.querySelector('#OnButton')
+    const OffButton = document.querySelector('#OffButton')
+
+    OnButton.addEventListener("click", OnPress);
+    OffButton.addEventListener("click", OffPress)
+  </script>
+</body>
+
+</html>

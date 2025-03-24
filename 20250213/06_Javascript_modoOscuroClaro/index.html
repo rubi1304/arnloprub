@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Claro y oscuro</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+    * {
+      margin: 0;
+    }
+
+    body {
+      font-family: "Barrio", serif;
+      font-weight: 400;
+      font-size: 60px;
+      font-style: normal;
+      /* Modificar los estilos para que el texto y la imagen queden centrados en la página */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="texto">PULSA LA LUNA PARA ACTIVAR EL MODO OSCURO</div>
+  <img src="img/luna.png" width="15%" id="buttonDarkMode">
+
+  <script>
+    /* La variable modoOscuro nos permitirá saber si estamos en modo oscuro o claro
+       y actuar cambiando al modo opuesto:
+         Modo oscuro: fondo del body black y texto blanco.
+         Modo claro: fondo del body blanco y texto negro.
+    */
+    let isDark = false;
+    /* Debemos guardar en variables  el texto y la imagen.*/
+    const modeButton = document.querySelector('#buttonDarkMode')
+    const text = document.querySelector('#texto')
+    /* En la imagen se debe añadir un event listener que haga lo siguiente,
+       controlando con una estructura condicional si el modoOscuro es false/true:
+        1) Cambiar la imagen a la opuesta (sol.jpg o luna.png).
+        2) Cambiar el texto por el que corresponda.
+        3) Cambiar el fondo de la página y el color según corresponda.
+        4) Modificar el valor de la variable modoOscuro al valor opuesto.
+    */
+    modeButton.addEventListener("click", modeChange)
+
+    function modeChange() {
+      if (isDark == false) {
+        isDark = true;
+        modeButton.setAttribute('src', 'img/sol.jpg')
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
+        text.innerText = "PULSA EL SOL PARA ACTIVAR EL MODO CLARO";
+      }
+      else {
+        isDark = false;
+        modeButton.setAttribute('src', 'img/luna.png')
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = 'black';
+        text.innerText = "PULSA LA LUNA PARA ACTIVAR EL MODO OSCURO";
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>

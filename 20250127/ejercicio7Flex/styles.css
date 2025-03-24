@@ -1,0 +1,51 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    color: #ebebeb;
+}
+
+.item {
+    min-height: 6.25rem;
+    padding: 1rem;
+}
+header {
+    background-color: #105b63;
+}
+main {
+    background-color: #fffad5;
+    color: #333;
+}
+aside {
+    background-color: #ffd34e;
+    color: #222;
+}
+aside.aside-two {
+    background-color: #db9e36;
+    color: #333;
+}
+footer {
+    background-color: #bd4932;
+}
+
+
+/* Usando flex y media queries:
+
+   Cuando la resolución horizontal es mayor de 768px:
+   ********** HEADER **********
+   ASIDE1     MAIN   ASIDE2
+   ********** FOOTER **********
+   Header y footer deben estar en la parte de arriba y abajo, dejando que MAIN
+   ocupe el resto del espacio.
+   Cuando la resolución horizontal es menor de 768px la disposición debe ser así:
+   *** HEADER ****
+   *** ASIDE1 ****
+   *** MAIN   ****
+   *** ASIDE2 ****
+   *** FOOTER ****
+   MAIN crece si sobra espacio.
+
+   Por otro lado, cuando el ancho de la página es mayor de 1200px, el contenido de la página debe de dejar de crecer. 
+   Quedará centrado en la página.
+*/

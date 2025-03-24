@@ -1,0 +1,4 @@
+Nueva propiedad innerText para cambiar el texto.
+
+Usamos setAttribute para cambiar la imagen.
+document.body.style.backgroundColor para cambiar el color de fondo.

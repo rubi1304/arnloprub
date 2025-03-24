@@ -1,0 +1,90 @@
+ html {
+    font-size: 62.5%; /* 1REM = 10px */
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 2rem 0;
+    font-size: 3rem;
+}
+
+main {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.pagina {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer {
+    border-top: 1px solid #e1e1e1;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+
+.copyright {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.menus-footer > div {
+    margin-bottom: 2rem;
+}
+
+/****************************************** ESTILOS CUANDO LA PANTALLA ES MAYOR DE 768px (sin media queries) ***********************************************/
+/* 1. Hacer que todos los enlaces dentro de los menús empiecen en una nueva línea */
+.menus-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.menu-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* 2. Cuando el tamaño de la pantalla es mayor de 768px El footer tiene que disponerse en una fila. Debe existir un espaciado mínimo entre menús de 2rem */
+
+
+
+
+/* 3. El menú central (Sobre Nosotros y Nuestros Valores) tiene que tener una anchura del triple con respecto a los otros dos (con título Soporte y Categorías) */
+.menus-footer div:nth-child(2){
+    flex-grow: 1;
+}
+
+
+
+/************************************ TAMAÑO DE LA PANTALLA MENOR A 768px (media queries) *******************************************/
+
+/* 5. El tamaño de fuente de los h3 debe cambiar a 2.4rem. */
+@media only screen and (max-width:768px){
+    h3{
+        font-size: 2.4rem;
+    }
+
+
+
+/* 6. La disposición de los tres menús es en columnas y los elementos están centrados en lugar de alineados a la izquierda */
+    .menus-footer{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+}
